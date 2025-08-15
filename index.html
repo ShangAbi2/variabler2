@@ -4,6 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+  .boks {
+    width: 120px;
+    height: 120px;
+    border: 2px dashed #bbb;
+    display: inline-block;
+    margin: 8px;
+    background: #fff;
+    vertical-align: middle;
+  }
+  .boks.selected {
+    border: 3px solid #222;   
+    outline: 3px solid #2222; 
+  }
+</style>
 </head>
 <body>
     <div id="blå" onclick="selectColor(document.getElementById('blå'));">klikk her for å velge blå</div>
@@ -11,9 +26,11 @@
     <div id="rød" onclick="selectColor(document.getElementById('rød'))">klikk her for å velge rød</div>
 
 
-    <button id="changeButton" onclick="changeWholeBackground()">Endre bakrun til valgt farge!</button>
+    <button id="changeButton" onclick="changeWholeBackground()">Endre bakrun på siden til valgt farge!</button>
 
-
+    <div class="boks" id="boks1"></div>
+    <div class="boks" id="boks2"></div>
+    <div class="boks" id="boks3"></div>
 
 
 

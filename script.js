@@ -49,3 +49,18 @@ function changeWholeBackground(){
         document.body.style.backgroundColor = cssColors[selectedColor];
     }
 }
+
+
+const boksEls = Array.from(document.querySelectorAll('.boks'));
+let selectedBoxEl = null;
+
+boksEls.forEach(boks => {
+  boks.addEventListener('click', () => {
+    if (selectedBoxEl) selectedBoxEl.classList.remove('selected');
+    selectedBoxEl = boks;
+    boks.classList.add('selected');
+    if (selectedColor) {
+      boks.style.backgroundColor = cssColors[selectedColor]; 
+    }
+  });
+});
