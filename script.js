@@ -1,8 +1,3 @@
-var selectblå = document.getElementById("blå");
-var selectrød = document.getElementById("rød");   
-var selectgrønn = document.getElementById("grønn");
-var selectedColor = "";
-
 /*
 function selectColor(farge) {
     selectedColor = farge;
@@ -21,6 +16,15 @@ function selectColor(farge) {
     }
 }
 */
+
+
+
+var selectblå = document.getElementById("blå");
+var selectrød = document.getElementById("rød");   
+var selectgrønn = document.getElementById("grønn");
+var selectedColor = "";
+
+
 // best practice:
 const cssColors = {
     blå: "blue",
